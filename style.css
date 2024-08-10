@@ -1,0 +1,164 @@
+body {
+    max-width: 1350px;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto
+}
+
+.frontpage {
+    height: 100vh
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff3535;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content
+}
+
+#logo {
+    height: 60px;
+    width: auto
+}
+
+div.navbar-button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-right: 5px
+}
+
+.navbar-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.15s
+}
+
+.navbar-button a:hover {
+    background-color: white;
+    color: black
+}
+
+div.hero {
+    height: 93vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px
+}
+
+img.hero {
+    height: 50vh;
+    width: auto
+}
+
+#hero-header {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0px
+}
+
+.projects {
+    display: flex;
+    gap: 30px;
+    height: fit-content
+}
+
+.project {
+    flex: 1
+}
+
+.project img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.15s
+}
+
+.project:hover img {
+    transform: scale(0.95,0.95)
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0px
+}
+
+.blog {
+    margin: 50px 0px
+}
+
+.blog > :is(h1, p) {
+    text-align: center
+}
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0px
+}
+
+.blog-keyart {
+    width: 50%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+.blog-description {
+    width: 35%
+}
+
+.blog-description h2 {
+    margin: 0px
+}
+
+.blog-description p {
+    margin: 10px 0px
+}
+
+#read-more {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #ff3535;
+    padding: 15px 30px;
+    border-radius: 7px;
+    transition: 0.15s;
+    margin: 60px 0px
+}
+
+#read-more:hover {
+    background-color: #ff4f4f
+}
+
+.arrows {
+    
+}
+
+.chevron {
+    height: 64px;
+    width: auto
+}
+
+.slider {
+    height: 35px;
+    width: auto
+}
+
