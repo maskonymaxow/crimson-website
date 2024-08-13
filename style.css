@@ -52,6 +52,9 @@ div.navbar-button {
     color: black
 }
 
+.current-page {
+}
+
 div.hero {
     height: 93vh;
     width: 80%;
