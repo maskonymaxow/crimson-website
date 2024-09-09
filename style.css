@@ -205,6 +205,7 @@ img.hero {
 
 .member-picture {
     height: 350px;
-    position: absolute;
+    float: right;
+	right: 0;
     bottom: 0
 }
