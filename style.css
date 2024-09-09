@@ -1,6 +1,7 @@
 :root {
     --crimson: #ff3535;
-    --crimson-light: #ff4f4f
+    --crimson-light: #ff4f4f;
+    --beige: #f5f5dc
 }
 
 body {
@@ -170,3 +171,40 @@ img.hero {
     width: auto
 }
 
+.meet-team {
+    height: 300px;
+    background-color: var(--beige);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px
+}
+
+.team-icons-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center
+}
+
+.team-icons-bar * {
+    width: 50px
+}
+
+.team-description {
+    position: relative;
+    width: 100%
+}
+
+.team-member {
+    position: absolute;
+    display: flex;
+    justify-content: space-between
+}
+
+.member-picture {
+    height: 350px;
+    position: absolute;
+    bottom: 0
+}
