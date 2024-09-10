@@ -1,7 +1,9 @@
 :root {
     --crimson: #ff3535;
     --crimson-light: #ff4f4f;
-    --beige: #f5f5dc
+    --beige: #f5f5dc;
+    --white: white;
+    --black: black
 }
 
 body {
@@ -40,7 +42,7 @@ div.navbar-button {
 .navbar-button a {
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: var(--white);
     font-weight: bold;
     font-size: 18px;
     padding: 15px;
@@ -49,8 +51,8 @@ div.navbar-button {
 }
 
 .navbar-button a:hover {
-    background-color: white;
-    color: black
+    background-color: var(--white);
+    color: var(--black)
 }
 
 .current-page {
@@ -145,7 +147,7 @@ img.hero {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
-    color: white;
+    color: var(--white);
     background-color: var(--crimson);
     padding: 15px 30px;
     border-radius: 7px;
@@ -175,16 +177,16 @@ img.hero {
     height: 300px;
     background-color: var(--beige);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
-    gap: 20px
+    gap: 30px
 }
 
 .team-icons-bar {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     justify-content: center
 }
 
@@ -203,9 +205,34 @@ img.hero {
     justify-content: space-between
 }
 
+.team-member h1 {
+    margin: 0;
+    margin-bottom: 5px
+}
+
+.team-member h6 {
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0
+}
+
+.team-member p {
+    font-size: 18px;
+    line-height: 25px
+}
+
 .member-picture {
     height: 350px;
     float: right;
 	right: 0;
     bottom: 0
+}
+
+.team-badge {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--white);
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: var(--crimson)
 }
