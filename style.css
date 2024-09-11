@@ -233,6 +233,13 @@ img.hero {
     font-size: 15px;
     color: var(--white);
     padding: 3px 10px;
-    border-radius: 5px;
+    border-radius: 5px
+}
+
+#badge-admin {
     background-color: var(--crimson)
+}
+
+#badge-team {
+    
 }
