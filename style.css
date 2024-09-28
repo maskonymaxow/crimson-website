@@ -178,20 +178,21 @@ img.hero {
 }
 
 .meet-team > div {
-    height: 300px;
+    height: 320px;
     background-color: var(--beige);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px;
     display: flex;
-    gap: 30px
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px
 }
 
 .team-icons-bar {
-    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
-    justify-content: center
+    justify-content: left
 }
 
 .team-icons-bar * {
@@ -208,12 +209,16 @@ img.hero {
 }
 
 .team-member > div {
-    width: calc(100% - 350px)
+    width: calc(100% - 580px)
 }
 
 .team-member h1 {
     margin: 0;
     margin-bottom: 5px
+}
+
+.team-member h3 {
+    font-size: 20px
 }
 
 .team-member h6 {
@@ -224,15 +229,14 @@ img.hero {
 
 .team-member p {
     font-size: 18px;
-    line-height: 25px
-}
+    line-height: 25px}
 
 .member-picture {
-    height: 350px;
+    height: 550px;
     position: absolute;
 	right: 0;
     bottom: 0;
-    overflow: hidden
+    margin: 0px 30px
 }
 
 .team-badge {
