@@ -16,10 +16,6 @@ body {
     color: var(--white)
 }
 
-.frontpage {
-    height: 100vh
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -59,6 +55,16 @@ div.navbar-button {
 }
 
 .current-page {
+}
+
+.page-header {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 30px 0px
+}
+
+.frontpage {
+    height: 100vh
 }
 
 div.hero {
@@ -181,7 +187,7 @@ img.hero {
 }
 
 .meet-team > div {
-    height: 320px;
+    height: fit-content;
     background-color: var(--beige);
     color: var(--black);
     border-radius: 20px;
@@ -257,4 +263,27 @@ img.hero {
 
 .badge-team {
     
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.project-item {
+    width: calc(25% - 15px);
+    aspect-ratio: 1 / 1
+}
+
+.project-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s
+}
+
+.project-icon:hover {
+    scale: 95%
 }
