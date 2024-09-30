@@ -3,14 +3,17 @@
     --crimson-light: #ff4f4f;
     --beige: #f5f5dc;
     --white: white;
-    --black: black
+    --black: black;
+    --space-grey: #181818
 }
 
 body {
     max-width: 1350px;
     width: 70%;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px auto
+    margin: 10px auto;
+    background-color: var(--space-grey);
+    color: var(--white)
 }
 
 .frontpage {
@@ -180,6 +183,7 @@ img.hero {
 .meet-team > div {
     height: 320px;
     background-color: var(--beige);
+    color: var(--black);
     border-radius: 20px;
     padding: 30px;
     display: flex;
