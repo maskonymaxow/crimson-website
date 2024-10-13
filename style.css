@@ -322,3 +322,31 @@ h5.blogpost-title {
     font-size: 18px;
     line-height: 22px
 }
+
+.project-selection {
+    display: flex;
+    gap: 100px
+}
+
+.project-selection-item {
+    width: calc(50% - 50px);
+    padding: 30px
+}
+
+.project-selection-thumbnail {
+    width: 100%;
+    transition: 0.3s
+}
+
+.project-selection-item:hover .project-selection-thumbnail {
+    scale: 150%
+}
+
+.project-selection > div > h2 {
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    text-align: center
+}
