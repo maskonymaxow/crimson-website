@@ -325,7 +325,8 @@ h5.blogpost-title {
 
 .project-selection {
     display: flex;
-    gap: 100px
+    gap: 100px;
+    align-items: center
 }
 
 .project-selection-item {
