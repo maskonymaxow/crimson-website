@@ -76,6 +76,55 @@ div.navbar-button {
     aspect-ratio: 5 / 2
 }
 
+.project-selection {
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.project-selection div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 150px
+}
+
+/* 'ps' is short for 'project-selection' */
+
+.ps-background {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px
+}
+
+.ps-title {
+    position: absolute;
+    left: 40px;
+    height: 60px
+}
+
+.ps-title.raftblock {
+    height: 80px
+}
+
+.ps-logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200px
+}
+
+.ps-logo.oneblock {
+    bottom: 15px
+}
+
+.ps-logo.raftblock {
+    bottom: 0;
+    right: 10px
+}
+
 .frontpage {
     height: 100vh
 }
