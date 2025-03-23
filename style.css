@@ -91,6 +91,9 @@ div.navbar-button {
     height: 150px
 }
 
+.project-selection div:hover {
+}
+
 /* 'ps' is short for 'project-selection' */
 
 .ps-background {
@@ -105,8 +108,17 @@ div.navbar-button {
     height: 60px
 }
 
+.ps-title.oneblock {
+    margin-bottom: 10px
+}
+
 .ps-title.raftblock {
     height: 80px
+}
+
+.ps-title.revenge {
+    height: 80px;
+    margin-bottom: 10px
 }
 
 .ps-logo {
@@ -122,6 +134,11 @@ div.navbar-button {
 
 .ps-logo.raftblock {
     bottom: 0;
+    right: 10px
+}
+
+.ps-logo.revenge {
+    bottom: 5px;
     right: 10px
 }
 
