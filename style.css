@@ -81,14 +81,14 @@ div.navbar-button {
     margin: 100px auto;
     display: flex;
     justify-content: center;
-    gap: 20px
+    gap: 30px
 }
 
 .project-selection div {
     position: relative;
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 120px;
     transition: 0.25s
 }
 
@@ -106,41 +106,41 @@ div.navbar-button {
 
 .ps-title {
     position: absolute;
-    left: 40px;
-    height: 60px
+    left: 30px;
+    height: 55px
 }
 
 .ps-title.oneblock {
-    margin-bottom: 10px
+    margin-bottom: 8px
 }
 
 .ps-title.raftblock {
-    height: 80px
+    height: 70px
 }
 
 .ps-title.revenge {
-    height: 80px;
-    margin-bottom: 10px
+    height: 70px;
+    margin-bottom: 8px
 }
 
 .ps-logo {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 200px
+    height: 160px
 }
 
 .ps-logo.oneblock {
-    bottom: 15px
+    bottom: 10px
 }
 
 .ps-logo.raftblock {
     bottom: 0;
-    right: 10px
+    right: 5px
 }
 
 .ps-logo.revenge {
-    bottom: 5px;
+    bottom: 2px;
     right: 10px
 }
 
