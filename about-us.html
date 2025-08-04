@@ -4,6 +4,35 @@
     <meta charset="utf-8">
     <title>About us</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function memberCrepi() {
+            document.getElementById('member-name').innerHTML= "Crepi";
+            document.getElementById('member-position').innerHTML= "manager";
+            document.getElementById('member-info').innerHTML= "This is Crepi. He's weird. I should know, I've spent a lot of time with him. To be fair, at this point I'm just trying to fill in the blank space, as I need some example text. Yet lorem ipsum is just too much for my fragile ego, that's the sole reason for this dumpsterfire of an internet essay. I hope this is enough. SPOILER: It was not enough.";
+            document.getElementById('member-picture').src='assets/team/introduction/crepi.png'
+        }
+
+        function memberCommand() {
+            document.getElementById('member-name').innerHTML= "MCommand";
+            document.getElementById('member-position').innerHTML= "engineer";
+            document.getElementById('member-info').innerHTML= "Command? The best person in the world, trust me. He knows what he's doing, this Finnish man can do anything with his suspiciously looking code! Whoever told you that datapacks are inferior to mods, he's probably wrong... or Command is just way too good at his job. I swear, Crimson Creations would be a dumpsterfire without him.";
+            document.getElementById('member-picture').src='assets/team/introduction/command.png'
+        }
+
+        function memberMaskony() {
+            document.getElementById('member-name').innerHTML= "MaskonyMaxow";
+            document.getElementById('member-position').innerHTML= "assistant director";
+            document.getElementById('member-info').innerHTML= "Maskony, oh Maskony... This guy does it all, website developer, builder, Crepi's personal therapist, he's a true polyhistor. So it doesn't come as a surprise that the only team position I could think of was 'assistant director'. I wonder what he's working on at the moment, if anything at all though, he's easily distracted from what I've heard...";
+            document.getElementById('member-picture').src='assets/team/introduction/maskony.png'
+        }
+
+        function memberFoxterion() {
+            document.getElementById('member-name').innerHTML= "Foxterion";
+            document.getElementById('member-position').innerHTML= "music artist";
+            document.getElementById('member-info').innerHTML= "Behold, Foxterion, our music artist! Honestly, I don't know this guy at all, the only thing I know about him is that he makes all the fancy-sounding music in our projects, you should definitely give it a listen! You can find it somewhere on youtube, I think, idk... just ask Crepi, he'll tell you, or he won't.";
+            document.getElementById('member-picture').src='assets/team/introduction/foxterion.png'
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -29,17 +58,17 @@
                     <div>
                         <h1>Meet the team</h1>
                         <h6>From artists to developers, all working hard on the projects you love!</h6>
-                        <h3>Crepi <span class="team-badge badge-admin">manager</span></h3>
-                        <p>This is Crepi. He's weird. I should know, I've spent a lot of time with him. To be fair, at this point I'm just trying to fill in the blank space, as I need some example text. Yet lorem ipsum is just too much for my fragile ego, that's the sole reason for this dumpsterfire of an internet essay. I hope this is enough. SPOILER: It was not enough.</p>
+                        <h3><span id="member-name">Crepi</span> <span id="member-position" class="team-badge badge-admin">manager</span></h3>
+                        <p id="member-info">This is Crepi. He's weird. I should know, I've spent a lot of time with him. To be fair, at this point I'm just trying to fill in the blank space, as I need some example text. Yet lorem ipsum is just too much for my fragile ego, that's the sole reason for this dumpsterfire of an internet essay. I hope this is enough. SPOILER: It was not enough.</p>
                     </div>
-                    <img src="assets/team/introduction/crepi.png" class="member-picture">
+                    <img src="assets/team/introduction/crepi.png" id="member-picture">
                 </div>
             </div>
             <div class="team-icons-bar">
-                <a><img src="assets/team/icons/crepi.png"></a>
-                <a><img src="assets/team/icons/command.png"></a>
-                <a><img src="assets/team/icons/maskony.png"></a>
-                <a><img src="assets/team/icons/foxterion.png"></a>
+                <button onclick="memberCrepi()"><img src="assets/team/icons/crepi.png"></button>
+                <button onclick="memberCommand()"><img src="assets/team/icons/command.png"></button>
+                <button onclick="memberMaskony()"><img src="assets/team/icons/maskony.png"></button>
+                <button onclick="memberFoxterion()"><img src="assets/team/icons/foxterion.png"></button>
             </div>
         </div>
     </div>

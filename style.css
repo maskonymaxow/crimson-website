@@ -340,7 +340,7 @@ img.hero {
 }
 
 .meet-team > div {
-    height: fit-content;
+    height: 300px;
     background-color: var(--beige);
     color: var(--black);
     border-radius: 20px;
@@ -358,7 +358,17 @@ img.hero {
     justify-content: left
 }
 
-.team-icons-bar * {
+.team-icons-bar > button {
+    width: fit-content;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer
+}
+
+.team-icons-bar img {
     width: 50px
 }
 
@@ -394,7 +404,7 @@ img.hero {
     font-size: 18px;
     line-height: 25px}
 
-.member-picture {
+#member-picture {
     height: 550px;
     position: absolute;
 	right: 0;
