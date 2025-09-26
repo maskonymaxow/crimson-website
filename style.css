@@ -55,6 +55,10 @@ div.navbar-button {
     color: var(--white)
 }
 
+#navbar-discord:hover {
+    background-color: #5865F2
+}
+
 .current-page {
 }
 
@@ -162,6 +166,44 @@ div.navbar-button {
     right: 10px
 }
 
+.paragraph-grid {
+    width: 60%;
+    margin: 200px auto;
+    padding: 60px 20px;
+    background-color: var(--black);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center
+}
+
+.paragraph-grid > * {
+    place-self: center
+}
+
+.paragraph-grid img {
+    width: 80%
+}
+
+.paragraph-grid div {
+}
+
+.paragraph-grid h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0
+}
+
+.paragraph-grid p {
+    font-size: 18px;
+    color: gray;
+    width: 80%
+}
+
 .extras {
     width: 60%;
     height: 200px;
@@ -209,134 +251,6 @@ div.navbar-button {
     bottom: 0;
     height: 100%;
     border-radius: 0 20px 20px 0
-}
-
-.frontpage {
-    height: 100vh
-}
-
-div.hero {
-    height: 93vh;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px
-}
-
-img.hero {
-    height: 50vh;
-    width: auto
-}
-
-#hero-header {
-    font-size: 80px;
-    font-weight: bold;
-    margin: 0px
-}
-
-.projects {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    gap: 30px;
-    height: fit-content
-}
-
-.project {
-    flex: 1
-}
-
-.project img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: 0.15s
-}
-
-.project:hover img {
-    transform: scale(0.95,0.95)
-}
-
-.project-name {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 5px 0px
-}
-
-.blog {
-    width: 70%;
-    margin: 50px auto 
-}
-
-.blog > :is(h1, p) {
-    text-align: center
-}
-
-.blog-post {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 30px 0px
-}
-
-.blog-keyart {
-    width: 50%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    border-radius: 10px
-}
-
-.blog-description {
-    width: 35%
-}
-
-.blog-description h2 {
-    margin: 0px
-}
-
-.blog-description p {
-    margin: 10px 0px
-}
-
-#read-more {
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--white);
-    background-color: var(--crimson);
-    padding: 15px 30px;
-    border-radius: 7px;
-    transition: 0.15s;
-    margin: 60px 0px
-}
-
-#read-more:hover {
-    background-color: var(--crimson-light)
-}
-
-.arrows {
-    
-}
-
-.chevron {
-    height: 64px;
-    width: auto
-}
-
-.slider {
-    height: 35px;
-    width: auto
-}
-
-.meet-team {
-    width: 70%;
-    margin: 200px auto;
-    position: relative
 }
 
 .meet-team > div {
@@ -429,6 +343,8 @@ img.hero {
 }
 
 .project-grid {
+    width: 70%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px
@@ -444,14 +360,18 @@ img.hero {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    transition: 0.3s
+    transition: 0.3s;
+    opacity: 0.6
 }
 
 .project-icon:hover {
-    scale: 95%
+    scale: 95%;
+    opacity: 1
 }
 
 .blogpost-list {
+    width: 70%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 40px
