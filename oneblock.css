@@ -1,15 +1,27 @@
-body {
-    background: linear-gradient(to bottom, #4acdfc, #c1eefe);
-}
-
 .frontpage {
     height: 100vh;
-    position: relative
+    position: relative;
+    background: linear-gradient(to bottom, #4acdfc, #c1eefe)
+}
+
+.keyart {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover
+}
+
+nav {
+    position: relative;
+    z-index: 1
 }
 
 .hero {
     width: 40%;
-    margin: 30px auto 0
+    margin: 30px auto 0;
+    position: relative;
+    z-index: 1
 }
 
 .hero p {
@@ -24,7 +36,8 @@ body {
 }
 
 #hero-title {
-    width: 50%
+    width: 50%;
+    margin: 0 auto
 }
 
 .hero-download {
@@ -33,7 +46,11 @@ body {
     position: absolute;
     bottom: 50px;
     left: 50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
 }
 
 .hero-download a {
@@ -50,4 +67,114 @@ body {
 
 .hero-download a:hover {
     background-color: var(--crimson-light)
+}
+
+.project-attributes {
+    display: flex;
+    gap: 10px;
+    height: 10vh
+}
+
+.project-carousel {
+    margin: 150px auto
+}
+
+.carousel-preview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    height: 80px;
+    margin: 0 auto 30px
+}
+
+.carousel-preview img {
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.project-introduction {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.project-introduction-text {
+    flex: 4;
+    background-color: var(--extra-grey);
+    border-radius: 20px 0 0 20px
+}
+
+.project-introduction-text * {
+    margin: 50px
+}
+
+.project-introduction-text h2 {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+    background-image: linear-gradient(to right, var(--crimson), yellow);
+    color: transparent;
+    background-clip: text;
+}
+
+.project-introduction-text p {
+    font-size: 18px;
+    margin-top: 30px
+}
+
+.project-introduction > img {
+    flex: 5;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+    aspect-ratio: 16 / 9
+}
+
+section.project-blog {
+    background-color: #465F6F
+}
+
+div.project-blog {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0
+}
+
+div.project-blog h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0 0 40px
+}
+
+div.project-blog > div {
+    display: flex;
+    gap: 60px
+}
+
+.project-blog-item {
+    flex: 1;
+    transition: 0.2s
+}
+
+.project-blog-item:hover {
+    scale: 97.5%
+}
+
+.project-blog-item img {
+    width: 100%;
+    border-radius: 20px
+}
+
+.project-blog-item p {
+    text-decoration: none;
+    color: var(--white);
+    margin: 15px 0 0;
+    font-size: 20px;
+    font-weight: 600
 }

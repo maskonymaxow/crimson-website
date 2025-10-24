@@ -4,7 +4,8 @@
     --beige: #f5f5dc;
     --white: white;
     --black: black;
-    --space-grey: #181818
+    --space-grey: #181818;
+    --extra-grey: #030303
 }
 
 body {
@@ -420,7 +421,8 @@ h5.blogpost-title {
 .project-introduction-text {
     flex: 4;
     background-color: steelblue;
-    border-radius: 20px 0 0 20px
+    border-radius: 20px 0 0 20px;
+    background-color: var(--extra-grey)
 }
 
 .project-introduction-text * {
