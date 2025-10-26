@@ -2,8 +2,9 @@
     --green: darkolivegreen
 }
 
-nav {
-    margin-bottom: 100px
+main {
+    width: 70%;
+    margin: 50px auto 0
 }
 
 .cover-image {
@@ -18,17 +19,62 @@ nav {
     border-radius: 20px
 }
 
+.blog-content {
+    position: relative
+}
+
+.blog-author {
+    position: absolute;
+    left: 0;
+    top: 75px
+}
+
+.blog-author span {
+    display: block
+}
+
+.blog-author img {
+    height: 200px
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 1px
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin: 30px auto
 }
 
 p {
+    font-size: 17px;
+    line-height: 125%
+}
+
+.paragraph {
+    width: 65%;
+    margin: 30px auto
+}
+
+.quote-box {
+    background-color: #D7B58D;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 150px auto
+}
+
+.quote-box p {
     width: 70%;
-    margin: 30px auto;
-    font-size: 17px
+    margin: 0 auto;
+    color: var(--black)
+}
+
+.quote-box img { 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px
 }
 
 .image-gallery {
