@@ -5,13 +5,14 @@
     --white: white;
     --black: black;
     --space-grey: #181818;
-    --extra-grey: #030303
+    --extra-grey: #030303;
+    --light-grey: #474747
 }
 
 body {
     max-width: 1920px;
     font-family: "Albert Sans", Arial, sans-serif;
-    margin: 0;
+    margin: 0 auto;
     background-color: var(--space-grey);
     color: var(--white)
 }
@@ -176,8 +177,8 @@ div.navbar-button {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 0px;
+    row-gap: 50px;
     align-items: center;
     justify-items: center
 }
@@ -202,7 +203,8 @@ div.navbar-button {
 .paragraph-grid p {
     font-size: 18px;
     color: gray;
-    width: 80%
+    width: 80%;
+    margin: 0
 }
 
 .extras {
@@ -277,7 +279,7 @@ div.navbar-button {
     justify-content: left
 }
 
-.team-icons-bar > button {
+.member-icon {
     width: fit-content;
     height: 50px;
     padding: 0;
