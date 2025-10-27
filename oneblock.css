@@ -50,12 +50,20 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px
+    gap: 20px;
+    z-index: 1
 }
 
-.hero-download a {
+.project-links {
+    display: flex;
+    gap: 15px
+}
+
+.project-links a {
     background-color: var(--crimson);
-    padding: 15px 50px;
+    padding: 15px 20px;
+    width: 15vw;
+    text-align: center;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 700;
@@ -65,7 +73,7 @@ nav {
     transition: 0.15s
 }
 
-.hero-download a:hover {
+.project-links a:hover {
     background-color: var(--crimson-light)
 }
 
@@ -75,7 +83,29 @@ nav {
     height: 10vh
 }
 
-.project-carousel {
+.hero-download > button {
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer
+}
+
+.scroll-arrow {
+    height: 50px
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(24, 24, 24,1) 90%)
+}
+
+#project-carousel {
     margin: 150px auto
 }
 
