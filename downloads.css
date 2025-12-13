@@ -73,14 +73,16 @@ p.download-header {
     justify-content: space-between
 }
 
-.download-patch-notes:hover {
-    text-decoration: underline
+.download-patch-notes:hover span {
+    text-decoration: underline;
+    color: white
 }
 
 .download-patch-notes span {
     font-size: 15px;
     text-transform: uppercase;
-    font-weight: 600
+    font-weight: 600;
+    color: lightgrey
 }
 
 .download-patch-notes img {
