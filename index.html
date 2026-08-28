@@ -10,66 +10,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        function navbarToggle() {
+            const element = document.getElementById('navbar-menu');
+
+            if (element.style.display === "" || element.style.display === "none") {
+                element.style.display = "flex"
+            } else {
+                element.style.display = "none"
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
         <a href="index.html">
             <img src="assets/logo.png" alt="logo" id="logo">
         </a>
-        <div class="navbar-button">
+        <div class="navbar-link">
             <a href="index.html" class="current-page">home</a>
             <a href="projects.html">projects</a>
             <a href="blog.html">blog</a>
             <a href="about-us.html">about us</a>
             <a href="wiki.html">wiki</a>
-            <a id="navbar-discord" href="https://discord.com/invite/VKgZ5HsmHF">discord</a>
+            <a class="navbar-discord" href="https://discord.com/invite/VKgZ5HsmHF">discord</a>
         </div>
+        <button id="navbar-button" onclick="navbarToggle()"><img src="assets/icons/menu.svg"></button>
     </nav>
-    <div id="frontpage-news">
-        <img src="assets/blog/oneblock_trials.png">
-        <h1>this is just some sample text</h1>
+    <div id="navbar-menu">
+        <a class="navbar-link">home</a>
+        <a class="navbar-link">projects</a>
+        <a class="navbar-link">blog</a>
+        <a class="navbar-link navbar-discord">discord</a>
     </div>
-    <div class="project-selection">
-        <a href="oneblock.html">
-            <div class="oneblock">
-                <img class="ps-background" src="assets/project_selection/oneblock/background.png">
-                <img class="oneblock ps-title" src="assets/project_selection/oneblock/title.png">
-                <img class="oneblock ps-logo" src="assets/project_selection/oneblock/logo.png">
-            </div>
-        </a>
-        <a href="">
-            <div class="raftblock">
-                <img class="ps-background" src="assets/project_selection/raftblock/background.png">
-                <img class="raftblock ps-title" src="assets/project_selection/raftblock/title.png">
-                <img class="raftblock ps-logo" src="assets/project_selection/raftblock/logo.png">
-            </div>
-        </a>
-        <a href="">
-            <div class="revenge">
-                <img class="ps-background" src="assets/project_selection/ob-revenge/background.png">
-                <img class="revenge ps-title" src="assets/project_selection/ob-revenge/title.png">
-                <img class="revenge ps-logo" src="assets/project_selection/ob-revenge/logo.png">
-            </div>
-        </a>
-    </div>
-    <div class="paragraph-grid">
-        <div>
-        <h2>Better together</h2>
-        <p>A new adventure awaits you! And it's best played with friends. Whether you're playing a survival map or something adventurous, it's always better to have someone to help you, our projects always support multiplayer. Slap it on and get into the action!</p>
+    <main>
+        <div id="frontpage-news">
+            <img src="assets/blog/oneblock_trials.png">
+            <h1>this is just some sample text</h1>
         </div>
-        <img src="assets/homepage/multiplayer.png">
-        <img src="assets/homepage/multiplayer.png">
-        <p>Endless possibilities... that's our goal. We want to create fun. Projects always have a wide direction, possibilities of what to do and language support. Do you want to survive on the high seas? no problem! Everything is available for Java Minecraft in a few clicks!</p>
-    </div>
-    <div class="extras">
-        <div class="extras-text">
-            <h2>Extras</h2>
-            <p>Whether you're a youtuber, artist, or an avid fan, we've got all the assets ready to use!
-                I do have to say, writing more text that is relevant is hard...
+        <div class="project-selection">
+            <a href="oneblock.html">
+                <div class="oneblock">
+                    <img class="ps-background" src="assets/project_selection/oneblock/background.png">
+                    <img class="oneblock ps-title" src="assets/project_selection/oneblock/title.png">
+                    <img class="oneblock ps-logo" src="assets/project_selection/oneblock/logo.png">
+                </div>
+            </a>
+            <a href="">
+                <div class="raftblock">
+                    <img class="ps-background" src="assets/project_selection/raftblock/background.png">
+                    <img class="raftblock ps-title" src="assets/project_selection/raftblock/title.png">
+                    <img class="raftblock ps-logo" src="assets/project_selection/raftblock/logo.png">
+                </div>
+            </a>
+            <a href="">
+                <div class="revenge">
+                    <img class="ps-background" src="assets/project_selection/ob-revenge/background.png">
+                    <img class="revenge ps-title" src="assets/project_selection/ob-revenge/title.png">
+                    <img class="revenge ps-logo" src="assets/project_selection/ob-revenge/logo.png">
+                </div>
+            </a>
+        </div>
+        <div class="paragraph-grid">
+            <p>
+                <span style="font-weight: 700; text-transform: uppercase">Better together</span>
+                <br>A new adventure awaits you! And it's best played with friends. Whether you're playing a survival map or something adventurous, it's always better to have someone to help you, our projects always support multiplayer. Slap it on and get into the action!
             </p>
-            <a href="">continue</a>
+            <img src="assets/homepage/multiplayer.png">
+            <img src="assets/homepage/multiplayer.png">
+            <p>Endless possibilities... that's our goal. We want to create fun. Projects always have a wide direction, possibilities of what to do and language support. Do you want to survive on the high seas? no problem! Everything is available for Java Minecraft in a few clicks!</p>
         </div>
-        <img class="" src="assets/homepage/extras.png">
-    </div>
+        <div class="extras">
+            <div class="extras-text">
+                <h2>Extras</h2>
+                <p>Whether you're a youtuber, artist, or an avid fan, we've got all the assets ready to use!
+                    I do have to say, writing more text that is relevant is hard...
+                </p>
+                <a href="">continue</a>
+            </div>
+            <img class="" src="assets/homepage/extras.png">
+        </div>
+    </main>
 </body>
 </html>
