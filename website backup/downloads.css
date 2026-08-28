@@ -1,0 +1,70 @@
+.download-grid {
+    width: 80%;
+    display: grid;
+    margin: 80px auto;
+    grid-template-columns: auto auto auto;
+    gap: 40px
+}
+
+.download-grid > div {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+    height: 50vh
+}
+
+.download-render {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2 / 1;
+    border-radius: 10px 10px 0 0
+}
+
+.download-contents {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+}
+
+.download-contents * {
+    margin: 0
+}
+
+.download-info p {
+    margin: 10px 0 20px
+}
+
+.download-info > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0
+}
+
+.download-info img {
+    height: 20px
+}
+
+.download-patch-notes {
+    display: flex;
+    justify-content: space-between
+}
+
+.download-patch-notes:hover span {
+    text-decoration: underline;
+    color: white
+}
+
+.download-patch-notes span {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: lightgrey
+}
+
+.download-patch-notes img {
+    height: 15px
+}

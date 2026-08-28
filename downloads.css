@@ -1,32 +1,39 @@
 .download-grid {
     width: 80%;
-    display: grid;
-    margin: 80px auto;
-    grid-template-columns: auto auto auto;
-    gap: 40px
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    gap: 20px
 }
 
 .download-grid > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--light-grey);
     border-radius: 10px;
-    height: 50vh
+    height: fit-content;
+    position: relative;
+    transition: 0.25s
+}
+
+.download-grid > div:hover {
+    scale: 97.5%
 }
 
 .download-render {
-    width: 100%;
     object-fit: cover;
-    aspect-ratio: 2 / 1;
-    border-radius: 10px 10px 0 0
+    aspect-ratio: 1 / 1;
+    border-radius: 10px 10px 0 0;
+    display: none
 }
 
 .download-contents {
-    padding: 30px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .download-contents * {
@@ -34,37 +41,29 @@
 }
 
 .download-info p {
-    margin: 10px 0 20px
+    margin: 10px 0 0
 }
 
-.download-info > div {
+.download-buttons {
     display: flex;
+    flex-direction: row-reverse;
+    gap: 20px
+}
+
+.download-buttons a {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 10px 0
+    background-color: var(--crimson);
+    border-radius: 10px
 }
 
-.download-info img {
-    height: 20px
+.download-buttons img {
+    height: 40px
 }
 
-.download-patch-notes {
-    display: flex;
-    justify-content: space-between
-}
-
-.download-patch-notes:hover span {
-    text-decoration: underline;
-    color: white
-}
-
-.download-patch-notes span {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: lightgrey
-}
-
-.download-patch-notes img {
-    height: 15px
+.download-buttons a.button-changelog {
+    background-color: mediumseagreen
 }

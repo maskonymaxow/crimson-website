@@ -1,0 +1,117 @@
+:root {
+    --green: darkolivegreen
+}
+
+main {
+    width: 70%;
+    margin: 50px auto 0
+}
+
+.cover-image {
+    width: 100%;
+    aspect-ratio: 4 / 1
+}
+
+.cover-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px
+}
+
+.blog-content {
+    position: relative
+}
+
+.blog-author {
+    position: absolute;
+    left: 0;
+    top: 75px
+}
+
+.blog-author span {
+    display: block
+}
+
+.blog-author img {
+    height: 200px
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin: 30px auto
+}
+
+p {
+    font-size: 17px;
+    line-height: 125%
+}
+
+.paragraph {
+    width: 65%;
+    margin: 30px auto;
+    color: lightgrey
+}
+
+.quote-box {
+    background-color: #D7B58D;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 150px auto
+}
+
+.quote-box p {
+    width: 70%;
+    margin: 0 auto;
+    color: var(--black)
+}
+
+.quote-box img { 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px
+}
+
+.image-gallery {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    background-color: var(--green);
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center
+}
+
+.image-gallery > img {
+    height: 100%
+}
+
+.image-gallery > div {
+    position: relative;
+    height: 100%
+}
+
+.carousel-left {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    opacity: 0.5
+}
+
+.carousel-right {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    opacity: 0.5
+}
+
+.carousel-center {
+
+}

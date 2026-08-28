@@ -1,0 +1,218 @@
+.frontpage {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, #4acdfc, #c1eefe);
+    overflow: hidden
+}
+
+.keyart {
+    position: absolute;
+    z-index: 0;
+    min-width: 100vw;
+    height: 100vh;
+    object-fit: cover
+}
+
+nav {
+    position: relative;
+    z-index: 1
+}
+
+.hero {
+    width: 55%;
+    margin: 30px auto 0;
+    position: relative;
+    z-index: 1
+}
+
+.hero p {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 15px
+}
+
+.hero > img {
+    width: 100%;
+    display: block
+}
+
+#hero-title {
+    width: 50%;
+    margin: 0 auto
+}
+
+.hero-download {
+    margin: 0 auto;
+    width: fit-content;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1
+}
+
+.project-links {
+    display: flex;
+    gap: 15px
+}
+
+.project-links a {
+    background-color: var(--crimson);
+    padding: 15px 20px;
+    width: 15vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.15s
+}
+
+.project-links a:hover {
+    background-color: var(--crimson-light)
+}
+
+.hero-download > button {
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer
+}
+
+.scroll-arrow {
+    height: 50px;
+    transition: 0.15s
+}
+
+.scroll-arrow:hover {
+    transform: translateY(5px)
+}
+
+.gradient {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(24, 24, 24,1) 90%)
+}
+
+.project-attributes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    height: 10vh;
+    margin: 50px auto
+}
+
+#project-carousel {
+    margin: 80px auto 150px
+}
+
+.carousel-preview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    height: 80px;
+    margin: 0 auto 30px
+}
+
+.carousel-preview img {
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.project-introduction {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.project-introduction-text {
+    flex: 4;
+    background-color: var(--extra-grey);
+    border-radius: 20px 0 0 20px
+}
+
+.project-introduction-text * {
+    margin: 50px
+}
+
+.project-introduction-text h2 {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+    background-image: linear-gradient(to right, var(--crimson), yellow);
+    color: transparent;
+    background-clip: text;
+}
+
+.project-introduction-text p {
+    font-size: 18px;
+    margin-top: 30px
+}
+
+.project-introduction > img {
+    flex: 5;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+    aspect-ratio: 16 / 9
+}
+
+section.project-blog {
+    background-color: #465F6F
+}
+
+div.project-blog {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0
+}
+
+div.project-blog h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0 0 40px
+}
+
+div.project-blog > div {
+    display: flex;
+    gap: 60px
+}
+
+.project-blog-item {
+    flex: 1
+}
+
+.project-blog-item:hover img {
+    scale: 97.5%
+}
+
+.project-blog-item img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.2s
+}
+
+.project-blog-item p {
+    text-decoration: none;
+    color: var(--white);
+    margin: 15px 0 0;
+    font-size: 20px;
+    font-weight: 600
+}

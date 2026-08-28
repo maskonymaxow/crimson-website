@@ -75,7 +75,7 @@ a.navbar-link:hover {
     color: var(--white)
 }
 
-a.navbar-discord:hover {
+.navbar-discord:hover {
     background-color: #5865F2
 }
 
