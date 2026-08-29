@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -326,4 +326,12 @@ h5.blogpost-title {
     object-fit: cover;
     border-radius: 0 20px 20px 0;
     aspect-ratio: 3 / 2
+}
+
+@media screen and (min-width: 800px) {
+
+nav {
+    width: 70%
+}
+
 }

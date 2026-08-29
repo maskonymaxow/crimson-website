@@ -21,14 +21,15 @@
 }
 
 .download-render {
+    height: fit-content;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-    border-radius: 10px 10px 0 0;
-    display: none
+    border-radius: 10px;
+    height: 75px
 }
 
 .download-contents {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,14 +41,20 @@
     margin: 0
 }
 
+.download-info {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
 .download-info p {
-    margin: 10px 0 0
+    margin: 5px 0 0
 }
 
 .download-buttons {
     display: flex;
     flex-direction: row-reverse;
-    gap: 20px
+    gap: 15px
 }
 
 .download-buttons a {

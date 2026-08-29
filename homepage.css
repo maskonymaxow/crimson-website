@@ -29,8 +29,14 @@ main {
     width: 70%;
     margin: 100px auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 30px
+    align-items: center;
+    gap: 60px
+}
+
+.project-selection a {
+    width: fit-content
 }
 
 .project-selection div {
@@ -42,7 +48,7 @@ main {
 }
 
 .project-selection div:hover {
-    transform: translateY(-10px)
+    transform: scale(95%)
 }
 
 /* 'ps' is short for 'project-selection' */
@@ -180,4 +186,17 @@ main {
     bottom: 0;
     height: 100%;
     border-radius: 0 20px 20px 0
+}
+
+@media screen and (min-width: 1600px) {
+
+.project-selection {
+    flex-direction: row;
+    gap: 30px
+}
+
+.project-selection div:hover {
+    transform: translateY(-10px)
+}
+
 }
