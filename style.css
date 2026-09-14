@@ -1,6 +1,7 @@
 :root {
-    --crimson: #fb3232;
+    --crimson: #de3939;
     --crimson-light: #ff4f4f;
+    --crimson-dark: ;
     --beige: #f5f5dc;
     --white: white;
     --black: black;
@@ -10,7 +11,7 @@
 }
 
 body {
-    max-width: 1920px;
+    max-width: 120rem;
     font-family: "Albert Sans", Arial, sans-serif;
     margin: 0 auto;
     background-color: var(--space-grey);
@@ -18,13 +19,13 @@ body {
 }
 
 nav {
-    width: 100%;
+    width: auto;
+    max-width: 60rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--);
-    padding: 10px;
+    padding: 0.625rem 1rem;
     border-radius: 10px;
     height: fit-content;
     position: relative;
@@ -32,15 +33,14 @@ nav {
 }
 
 #logo {
-    height: 60px;
+    height: 3.75rem;
     width: auto
 }
 
 div.navbar-link {
     display: flex;
     gap: 10px;
-    align-items: center;
-    padding-right: 5px
+    align-items: center
 }
 
 .navbar-link a {
@@ -109,8 +109,10 @@ a.navbar-discord:hover {
 }
 
 main {
-    width: 70%;
-    margin: 0 auto
+    width: auto;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem
 }
 
 h1.page-header {
@@ -227,7 +229,6 @@ p.page-header {
 }
 
 .project-grid {
-    width: 70%;
     margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
@@ -251,44 +252,6 @@ p.page-header {
 .project-icon:hover {
     scale: 95%;
     opacity: 1
-}
-
-.blogpost-list {
-    width: 70%;
-    margin: 80px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px
-}
-
-.blogpost-list-item {
-    display: flex;
-    gap: 20px;
-    height: 200px;
-    transition: 0.2s
-}
-
-.blogpost-list-item:hover {
-    scale: 97.5%
-}
-
-.blogpost-thumbnail {
-    height: 100%;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    border-radius: 10px
-}
-
-h5.blogpost-title {
-    text-transform: uppercase;
-    font-size: 22px;
-    margin: 0
-}
-
-.blogpost-excerpt {
-    font-size: 18px;
-    color: lightgrey;
-    margin: 10px 0
 }
 
 .project-introduction {
@@ -328,10 +291,16 @@ h5.blogpost-title {
     aspect-ratio: 3 / 2
 }
 
-@media screen and (min-width: 800px) {
+footer {
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--crimson)
+}
 
-nav {
-    width: 70%
+@media screen and (min-width: 62rem) {
+
+main {
+
 }
 
 }

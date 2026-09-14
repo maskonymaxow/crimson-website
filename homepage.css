@@ -1,22 +1,19 @@
-main {
-    width: 100%
-}
-
 #frontpage-news {
-    width: 80%;
-    margin: 0 auto 20px;
+    width: 100%;
+    margin: 0 auto 1.25rem;
     position: relative
 }
 
 #frontpage-news > img {
     width: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     aspect-ratio: 5 / 2;
     position: relative
 }
 
 #frontpage-news > h1 {
+    text-align: right;
     position: absolute;
     right: 30px;
     bottom: 25px;
@@ -26,7 +23,7 @@ main {
 }
 
 .project-selection {
-    width: 70%;
+    width: auto;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
@@ -36,15 +33,20 @@ main {
 }
 
 .project-selection a {
-    width: fit-content
+    width: 100%
+}
+
+.project-selection > div {
+    display: flex;
+    align-items: center;
+    width: auto;
+    transition: 0.25s
 }
 
 .project-selection div {
     position: relative;
-    display: flex;
-    align-items: center;
-    height: 120px;
-    transition: 0.25s
+    width: auto;
+    height: 120px
 }
 
 .project-selection div:hover {
@@ -56,17 +58,21 @@ main {
 .ps-background {
     object-fit: cover;
     height: 100%;
+    width: 100%;
     border-radius: 20px
 }
 
 .ps-title {
     position: absolute;
     left: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
     height: 55px
 }
 
 .ps-title.oneblock {
-    margin-bottom: 8px
+    bottom: 8px
 }
 
 .ps-title.raftblock {
@@ -75,7 +81,7 @@ main {
 
 .ps-title.revenge {
     height: 70px;
-    margin-bottom: 8px
+    bottom: 8px
 }
 
 .ps-logo {
@@ -100,7 +106,6 @@ main {
 }
 
 .paragraph-grid {
-    width: 60%;
     margin: 200px auto;
     padding: 60px 20px;
     background-color: var(--black);
@@ -139,9 +144,7 @@ main {
 }
 
 .extras {
-    width: 60%;
-    height: 200px;
-    margin: auto;
+    margin: 5rem auto;
     position: relative;
     border-radius: 20px;
     background-color: var(--crimson-light);
@@ -149,8 +152,7 @@ main {
 }
 
 .extras-text {
-    width: 30%;
-    height: 100%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between
@@ -158,16 +160,20 @@ main {
 
 .extras h2 {
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 1.5rem;
     margin: 0;
     font-weight: 800
+}
+
+.extras p {
+    margin: 0.25rem 0 0.75rem
 }
 
 .extras a {
     width: fit-content;
     background-color: var(--white);
     color: var(--crimson-light);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
@@ -188,15 +194,72 @@ main {
     border-radius: 0 20px 20px 0
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1800px) {
+
+body {
+    padding: 0
+}
+
+main {
+    max-width: 100vw
+}
+
+#frontpage-news {
+    width: 80%
+}
 
 .project-selection {
+    width: 80%;
     flex-direction: row;
     gap: 30px
 }
 
+.project-selection a {
+    width: fit-content
+}
+
+.project-selection div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    transition: 0.25s
+}
+
 .project-selection div:hover {
     transform: translateY(-10px)
+}
+
+.ps-background {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px
+}
+
+.ps-title {
+    position: absolute;
+    left: 30px;
+    top: auto;
+    bottom: auto;
+    margin: 0;
+    height: 55px
+}
+
+.ps-title.oneblock {
+    margin-bottom: 8px
+}
+
+.ps-title.revenge {
+    height: 70px;
+    margin-bottom: 8px
+}
+
+.paragraph-grid {
+    width: 60%
+}
+
+.extras {
+    width: 60%
 }
 
 }
