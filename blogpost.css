@@ -3,7 +3,6 @@
 }
 
 main {
-    width: 70%;
     margin: 50px auto 0
 }
 
@@ -20,13 +19,16 @@ main {
 }
 
 .blog-content {
-    position: relative
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto
 }
 
 .blog-author {
     position: absolute;
     left: 0;
-    top: 75px
+    top: 75px;
+    display: none
 }
 
 .blog-author span {
@@ -37,24 +39,44 @@ main {
     height: 200px
 }
 
-h1 {
+.blog-content > h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 2.75rem;
     letter-spacing: 1px;
     font-weight: 800;
     margin: 30px auto
 }
 
-p {
-    font-size: 17px;
-    line-height: 125%
+.blog-content > h2 {
+    margin: 3rem 0 1.25rem
 }
 
-.paragraph {
-    width: 65%;
-    margin: 30px auto;
+.blog-content > p {
+    font-size: 1.0675rem;
+    line-height: 125%;
     color: lightgrey
+}
+
+figure {
+    margin: 2rem 0;
+    width: auto
+}
+
+figure > img {
+    width: 100%;
+    border-radius: 1.25rem
+}
+
+figcaption {
+    color: lightgray;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: center
+}
+
+hr {
+    margin: 3rem 0
 }
 
 .quote-box {
@@ -62,7 +84,8 @@ p {
     position: relative;
     padding: 20px;
     border-radius: 20px;
-    margin: 150px auto
+    margin: 150px auto;
+    display: none
 }
 
 .quote-box p {

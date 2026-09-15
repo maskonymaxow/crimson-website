@@ -39,14 +39,15 @@
 .project-selection > div {
     display: flex;
     align-items: center;
-    width: auto;
-    transition: 0.25s
+    width: auto
+
 }
 
 .project-selection div {
     position: relative;
     width: auto;
-    height: 120px
+    height: 120px;
+    transition: 0.25s
 }
 
 .project-selection div:hover {
@@ -194,7 +195,7 @@
     border-radius: 0 20px 20px 0
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 112.5rem) {
 
 body {
     padding: 0
@@ -246,12 +247,14 @@ main {
 }
 
 .ps-title.oneblock {
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    bottom: auto
 }
 
 .ps-title.revenge {
     height: 70px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    bottom: auto
 }
 
 .paragraph-grid {
