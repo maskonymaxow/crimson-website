@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px
+    gap: 1rem
 }
 
 .project-selection a {
@@ -65,45 +65,29 @@
 
 .ps-title {
     position: absolute;
-    left: 30px;
+    left: 50%; 
+    transform: translateX(-50%);
     top: 0;
     bottom: 0;
     margin: auto 0;
-    height: 55px
+    height: 3.5rem
 }
 
 .ps-title.oneblock {
-    bottom: 8px
+    bottom: 0.5rem
 }
 
 .ps-title.raftblock {
-    height: 70px
+    height: 4.5rem
 }
 
 .ps-title.revenge {
     height: 70px;
-    bottom: 8px
+    bottom: 0.5rem
 }
 
 .ps-logo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 160px
-}
-
-.ps-logo.oneblock {
-    bottom: 10px
-}
-
-.ps-logo.raftblock {
-    bottom: 0;
-    right: 5px
-}
-
-.ps-logo.revenge {
-    bottom: 2px;
-    right: 10px
+    display: none
 }
 
 .paragraph-grid {
@@ -195,6 +179,16 @@
     border-radius: 0 20px 20px 0
 }
 
+@media screen and (min-width: 62rem) {
+
+.project-selection {
+    width: auto;
+    flex-direction: row;
+    gap: 1.5rem
+}
+
+}
+
 @media screen and (min-width: 112.5rem) {
 
 body {
@@ -211,8 +205,7 @@ main {
 
 .project-selection {
     width: 80%;
-    flex-direction: row;
-    gap: 30px
+    gap: 2rem
 }
 
 .project-selection a {
@@ -223,7 +216,7 @@ main {
     position: relative;
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 7.5rem;
     transition: 0.25s
 }
 
@@ -234,12 +227,13 @@ main {
 .ps-background {
     object-fit: cover;
     height: 100%;
-    border-radius: 20px
+    border-radius: 1.25rem
 }
 
 .ps-title {
     position: absolute;
-    left: 30px;
+    left: 1.75rem;
+    transform: none;
     top: auto;
     bottom: auto;
     margin: 0;
@@ -255,6 +249,28 @@ main {
     height: 70px;
     margin-bottom: 8px;
     bottom: auto
+}
+
+.ps-logo {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 10rem
+}
+
+.ps-logo.oneblock {
+    bottom: 10px
+}
+
+.ps-logo.raftblock {
+    bottom: 0;
+    right: 5px
+}
+
+.ps-logo.revenge {
+    bottom: 2px;
+    right: 10px
 }
 
 .paragraph-grid {
