@@ -7,13 +7,13 @@
     --black: black;
     --space-grey: #181818;
     --extra-grey: #030303;
-    --light-grey: #474747
+    --light-grey: #474747;
+    --raft-blue: mediumseagreen
 }
 
 body {
-    max-width: 120rem;
     font-family: "Albert Sans", Arial, sans-serif;
-    margin: 0 auto;
+    margin: 0;
     background-color: var(--space-grey);
     color: var(--white)
 }
@@ -118,6 +118,39 @@ p.page-header {
     margin: 0 auto;
     text-align: center;
     color: lightgray
+}
+
+.badge {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--white);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: 700
+}
+
+.badge-oneblock {
+    background-color: var(--raft-blue)
+}
+
+.badge-oneblock::after {
+    content: "oneblock"
+}
+
+.badge-raftblock {
+    background-color: var(--raft-blue)
+}
+
+.badge-raftblock::after {
+    content: "raftblock"
+}
+
+.badge-oneblock-r {
+    background-color: var(--raft-blue)
+}
+
+.badge-oneblock-r::after {
+    content: "ob revenge"
 }
 
 .page-paragraph {
@@ -284,13 +317,13 @@ p.page-header {
 footer {
     width: 100vw;
     height: 10rem;
-    background-color: var(--crimson)
+    background-color: var(--crimson);
+    margin: 0 0 0 0
 }
 
 @media screen and (min-width: 62rem) {
 
 main {
-
 }
 
 }
